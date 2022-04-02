@@ -42,7 +42,6 @@ class App {
 
     private initialiseDatabaseConnection(): void{
         const { MONGO_PATH } = process.env;
-
         mongoose.connect(`${MONGO_PATH}`);
     }
 
